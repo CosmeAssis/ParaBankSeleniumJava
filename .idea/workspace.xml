@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ad7de2d-98fd-4ca0-bef5-4d50aa056bba" name="Changes" comment="Up projeto base">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runner/RunTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/HomeSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/RegisterAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/features/RegistrarConta.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/runner/RunTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/HomeSteps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/steps/RegisterAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/RegisterAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/RegisterAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

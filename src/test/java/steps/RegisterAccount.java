@@ -20,7 +20,8 @@ public class RegisterAccount extends RunTest {
     @E("preencho os dados de cadastro")
     public void preenchoOsDadosDeCadastro() {
         RunTest runTest = new RunTest();
-        driver.findElement(By.id("customer.firstName")).sendKeys(faker.firstNameFake());
+        driver.findElement(By.id("customer.firstName")).sendKeys(faker.getFirstNameFake());
+        driver.findElement(By.id("customer.lastName")).sendKeys(faker.getLastNameFake());
     }
 
     @E("clico no botão Register")

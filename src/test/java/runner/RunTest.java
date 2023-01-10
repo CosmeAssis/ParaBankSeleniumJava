@@ -36,7 +36,11 @@ public class RunTest {
     //METODO FAKER LIBRARY
     Faker usFaker = new Faker(new Locale("en-US"));
     String firstName = usFaker.name().firstName();
-    public String firstNameFake(){
+    public String getFirstNameFake(){
         return firstName;
+    }
+    String lastName = usFaker.name().lastName();
+    public String getLastNameFake(){
+        return lastName;
     }
 }
