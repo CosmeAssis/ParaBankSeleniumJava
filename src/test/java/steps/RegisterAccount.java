@@ -22,6 +22,7 @@ public class RegisterAccount extends RunTest {
         RunTest runTest = new RunTest();
         driver.findElement(By.id("customer.firstName")).sendKeys(faker.getFirstNameFake());
         driver.findElement(By.id("customer.lastName")).sendKeys(faker.getLastNameFake());
+        driver.findElement(By.id("customer.address.street")).sendKeys(faker.getAddressStreet());
     }
 
     @E("clico no botão Register")
