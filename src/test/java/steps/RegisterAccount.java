@@ -18,15 +18,23 @@ public class RegisterAccount extends RunTest {
     }
 
     @E("preencho os dados de cadastro")
-    public void preenchoOsDadosDeCadastro() {
+    public void preencherDadosCadastrais() {
         RunTest runTest = new RunTest();
         driver.findElement(By.id("customer.firstName")).sendKeys(faker.getFirstNameFake());
         driver.findElement(By.id("customer.lastName")).sendKeys(faker.getLastNameFake());
         driver.findElement(By.id("customer.address.street")).sendKeys(faker.getAddressStreet());
+        driver.findElement(By.id("customer.address.city")).sendKeys(faker.getAddressCity());
+        driver.findElement(By.id("customer.address.state")).sendKeys(faker.getAddressState());
+        driver.findElement(By.id("customer.address.zipCode")).sendKeys(faker.getAddressZipCode());
+        driver.findElement(By.id("customer.phoneNumber")).sendKeys(faker.getPhoneNumber());
+        driver.findElement(By.id("customer.ssn")).sendKeys(faker.getSocialNumber());
+        driver.findElement(By.id("customer.username")).sendKeys(faker.getCustomerUsername());
+        driver.findElement(By.id("customer.password")).sendKeys(faker.getCustomerPassword());
+        driver.findElement(By.id("repeatedPassword")).sendKeys(faker.getCustomerPassword());
     }
 
     @E("clico no botão Register")
-    public void clicoNoBotãoRegister() {
+    public void clicarBotaoRegister() {
     }
 
     @Então("mensagem de conta criada com sucesso é exibida")
