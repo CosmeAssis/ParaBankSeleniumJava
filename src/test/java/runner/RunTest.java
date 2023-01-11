@@ -43,4 +43,9 @@ public class RunTest {
     public String getLastNameFake(){
         return lastName;
     }
+    String addressStreet = usFaker.address().streetAddress();
+
+    public String getAddressStreet(){
+        return addressStreet;
+    }
 }
