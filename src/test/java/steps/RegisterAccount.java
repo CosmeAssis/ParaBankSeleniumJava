@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import runner.RunTest;
@@ -35,10 +36,12 @@ public class RegisterAccount extends RunTest {
 
     @E("clico no botão Register")
     public void clicarBotaoRegister() {
+        driver.findElement(By.xpath("//input[@value='Register']")).click();
     }
 
     @Então("mensagem de conta criada com sucesso é exibida")
-    public void mensagemDeContaCriadaComSucessoÉExibida() {
-
+    public void mensagemContaCriadaComSucesso() {
+        String mensagemAccCriadaSucesso = driver.findElement(By.xpath("//p[contains(.,'Your account was created successfully. You are now logged in.')]")).getText();
+        Assert.assertEquals("Your account was created successfully. You are now logged in.",mensagemAccCriadaSucesso);
     }
 }

@@ -31,7 +31,7 @@ public class RunTest {
     @AfterClass
     public static void stop(){
 
-        driver.quit();
+        //driver.quit();
     }
     //METODO FAKER LIBRARY - https://github.com/DiUS/java-faker
     Faker usFaker = new Faker(new Locale("en-US"));
