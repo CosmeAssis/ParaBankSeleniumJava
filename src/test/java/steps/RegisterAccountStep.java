@@ -1,22 +1,14 @@
 package steps;
 
-import com.github.javafaker.Faker;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import runner.RunTest;
 
-import java.util.Locale;
-
-public class RegisterAccount extends RunTest {
+public class RegisterAccountStep extends RunTest {
     RunTest faker = new RunTest();
-    @Quando("clicar em Register")
-    public void clicarEmRegister() {
-        driver.findElement(By.xpath("//a[contains(.,'Register')]")).click();
-    }
 
     @E("preencho os dados de cadastro")
     public void preencherDadosCadastrais() {

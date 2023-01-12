@@ -8,7 +8,7 @@ Funcionalidade: Registrar uma nova conta no ParaBank
 Cenário: Registrar nova conta no Parabank
 
 Dado que acesso o site ParaBank
-Quando clicar no botão Log In
+Quando clicar em Register
 E preencho os dados de cadastro
 E clico no botão Register
 Então mensagem de conta criada com sucesso é exibida
