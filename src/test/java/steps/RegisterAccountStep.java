@@ -18,7 +18,7 @@ public class RegisterAccountStep extends RunTest {
 
     @E("clico no botão Register")
     public void clicarBotaoRegister() {
-        driver.findElement(By.xpath("//input[@value='Register']")).click();
+       registerAccountPage.clicarBotaoRegister();
     }
 
     @Então("mensagem de conta criada com sucesso é exibida")

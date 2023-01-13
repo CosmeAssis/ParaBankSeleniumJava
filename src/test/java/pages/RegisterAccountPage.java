@@ -31,5 +31,8 @@ public class RegisterAccountPage {
         driver.findElement(By.id("repeatedPassword")).sendKeys(textPassword);
     }
 
+    public void clicarBotaoRegister(){
+        driver.findElement(By.xpath("//input[@value='Register']")).click();
+    }
 
 }
