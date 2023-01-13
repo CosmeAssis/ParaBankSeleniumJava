@@ -23,7 +23,6 @@ public class RegisterAccountStep extends RunTest {
 
     @Então("mensagem de conta criada com sucesso é exibida")
     public void mensagemContaCriadaComSucesso() {
-        String mensagemAccCriadaSucesso = driver.findElement(By.xpath("//p[contains(.,'Your account was created successfully. You are now logged in.')]")).getText();
-        Assert.assertEquals("Your account was created successfully. You are now logged in.",mensagemAccCriadaSucesso);
+        registerAccountPage.msgContaCriadaSucesso();
     }
 }

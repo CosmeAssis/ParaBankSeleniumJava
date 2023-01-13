@@ -2,6 +2,7 @@ package pages;
 
 import com.github.javafaker.Faker;
 import dev.failsafe.Fallback;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -25,14 +26,18 @@ public class RegisterAccountPage {
         driver.findElement(By.id("customer.phoneNumber")).sendKeys(faker.phoneNumber().cellPhone());
         driver.findElement(By.id("customer.ssn")).sendKeys(faker.idNumber().ssnValid());
         driver.findElement(By.id("customer.username")).sendKeys(faker.dragonBall().character());
-        Double customerPassword = faker.number().randomDouble(15159999,15150000,15159999);
-        String  textPassword = customerPassword.toString();
-        driver.findElement(By.id("customer.password")).sendKeys(textPassword);
-        driver.findElement(By.id("repeatedPassword")).sendKeys(textPassword);
+        driver.findElement(By.id("customer.password")).sendKeys("135791");
+        driver.findElement(By.id("repeatedPassword")).sendKeys("135791");
     }
 
     public void clicarBotaoRegister(){
         driver.findElement(By.xpath("//input[@value='Register']")).click();
+    }
+
+    public void msgContaCriadaSucesso()
+    {
+        String mensagemAccCriadaSucesso = driver.findElement(By.xpath("//p[contains(.,'Your account was created successfully. You are now logged in.')]")).getText();
+        Assert.assertEquals("Your account was created successfully. You are now logged in.",mensagemAccCriadaSucesso);
     }
 
 }
