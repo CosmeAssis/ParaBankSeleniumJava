@@ -3,8 +3,11 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import support.Utils;
 
-public class HomePage {
+import java.time.Duration;
+
+public class HomePage extends Utils {
 
     WebDriver driver;
 
@@ -13,7 +16,8 @@ public class HomePage {
     }
     public void acessarSite(){
         driver.get("https://parabank.parasoft.com/parabank");
-        Assert.assertEquals(true,driver.findElement(By.xpath("//img[@title='ParaBank']")).isDisplayed());
+        aguardarElementoExibir(By.xpath("//img[@title='ParaBank']"));
+        //Assert.assertEquals(true,driver.findElement(By.xpath("//img[@title='ParaBank']")).isDisplayed());
     }
 
     public void clicarRegister(){
