@@ -1,6 +1,5 @@
 package runner;
 
-import com.github.javafaker.Faker;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -9,15 +8,14 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.Locale;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {},
-        features = "src/test/resources/features",
+        plugin = {"json:target/reports/report.json","html:target/reports/report.html"},
+        features = "src/test/resources/features/",
         //tags = {"~@ignore"},
         glue = {"steps"}
 )
+
 public class RunTest {
 
     public static WebDriver driver;

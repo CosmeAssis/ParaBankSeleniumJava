@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ad7de2d-98fd-4ca0-bef5-4d50aa056bba" name="Changes" comment="Up projeto base">
-      <change afterPath="$PROJECT_DIR$/src/test/java/support/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/RunTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/RunTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/support/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/support/Utils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -52,6 +54,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="runner" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.RunTest">
     <configuration name="Feature: RegistrarConta" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
