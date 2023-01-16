@@ -13,43 +13,53 @@ import java.util.Locale;
 public class RegisterAccountPage extends Utils {
     WebDriver driver;
 
-
     private By fieldFirstName = By.id("customer.firstName");
-   /* private By lastName = By.id("customer.lastName");
-    private By streetAddress = By.id("customer.address.street");
-    private By cityName = By.id("customer.address.street");
-    private By stateName = By.id("customer.address.state");
-    private By zipCode = By.id("customer.address.zipCode");
-    private By phoneNumber = By.id("customer.phoneNumber");
-    private By ssnNumber = By.id("customer.ssn");
-    private By username = By.id("customer.username");
-    private By password = By.id("customer.password");
-    private By repeatPassword = By.id("repeatedPassword");*/
-
-
+    private By fieldLastName = By.id("customer.lastName");
+    private By fieldStreetAddress = By.id("customer.address.street");
+    private By fieldCityName = By.id("customer.address.city");
+    private By fieldStateName = By.id("customer.address.state");
+    private By fieldZipCode = By.id("customer.address.zipCode");
+    private By fieldPhoneNumber = By.id("customer.phoneNumber");
+    private By fieldSsnNumber = By.id("customer.ssn");
+    private By fieldUsername = By.id("customer.username");
+    private By fieldPassword = By.id("customer.password");
+    private By fieldRepeatPassword = By.id("repeatedPassword");
 
     public void preencheFirstName(){
         driver.findElement(fieldFirstName).sendKeys(generateFakerFirstName);
     }
-/*    private String fakerLastName = faker.name().lastName();
-    private String fakerStreetAddress = faker.address().streetAddress();
-    private String fakerCityName = faker.address().cityName();*/
-
+    public void preencheLastName(){
+        driver.findElement(fieldLastName).sendKeys(generateFakerLastName);
+    }
+    public void preencheStreetAddress(){
+        driver.findElement(fieldStreetAddress).sendKeys(generateFakerStreetAddress);
+    }
+    public void preencheCity(){
+        driver.findElement(fieldCityName).sendKeys(generateFakerCity);
+    }
+    public void preencheState(){
+        driver.findElement(fieldStateName).sendKeys(generateFakerState);
+    }
+    public void preencheZipCode(){
+        driver.findElement(fieldZipCode).sendKeys(generateZipCode);
+    }
+    public void preenchePhoneNumber(){
+        driver.findElement(fieldPhoneNumber).sendKeys(generatePhoneNumber);
+    }
+    public void preencheSSN(){
+        driver.findElement(fieldSsnNumber).sendKeys(generateSsnNumber);
+    }
+    public void preencheUsernameRegister(){
+        driver.findElement(fieldUsername).sendKeys(generateUsernameRegister);
+    }
+    public void preenchePasswordRegister(){
+        driver.findElement(fieldPassword).sendKeys(registerPassword);
+    }
+    public void preencheConfirmPasswordRegister(){
+        driver.findElement(fieldRepeatPassword).sendKeys(registerPassword);
+    }
     public RegisterAccountPage(WebDriver driver) {
         this.driver = driver;
-    }
-
-    public void gerarDadosFake(){
-/*        driver.findElement(By.id("customer.lastName")).sendKeys(faker.name().lastName());
-        driver.findElement(By.id("customer.address.street")).sendKeys(faker.address().streetAddress());
-        driver.findElement(By.id("customer.address.city")).sendKeys(faker.address().cityName());
-        driver.findElement(By.id("customer.address.state")).sendKeys(faker.address().state());
-        driver.findElement(By.id("customer.address.zipCode")).sendKeys(faker.address().zipCode());
-        driver.findElement(By.id("customer.phoneNumber")).sendKeys(faker.phoneNumber().cellPhone());
-        driver.findElement(By.id("customer.ssn")).sendKeys(faker.idNumber().ssnValid());
-        driver.findElement(By.id("customer.username")).sendKeys(faker.dragonBall().character());
-        driver.findElement(By.id("customer.password")).sendKeys("135791");
-        driver.findElement(By.id("repeatedPassword")).sendKeys("135791");*/
     }
 
     public void clicarBotaoRegister(){

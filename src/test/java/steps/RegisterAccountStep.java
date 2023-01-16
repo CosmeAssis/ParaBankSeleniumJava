@@ -14,12 +14,21 @@ public class RegisterAccountStep extends RunTest {
     @E("preencho os dados de cadastro")
     public void preencherDadosCadastrais() {
         registerAccountPage.preencheFirstName();
-        registerAccountPage.gerarDadosFake();
+        registerAccountPage.preencheLastName();
+        registerAccountPage.preencheStreetAddress();
+        registerAccountPage.preencheCity();
+        registerAccountPage.preencheState();
+        registerAccountPage.preencheZipCode();
+        registerAccountPage.preenchePhoneNumber();
+        registerAccountPage.preencheSSN();
+        registerAccountPage.preencheUsernameRegister();
+        registerAccountPage.preenchePasswordRegister();
+        registerAccountPage.preencheConfirmPasswordRegister();
     }
 
     @E("clico no botão Register")
     public void clicarBotaoRegister() {
-       registerAccountPage.clicarBotaoRegister();
+        registerAccountPage.clicarBotaoRegister();
     }
 
     @Então("mensagem de conta criada com sucesso é exibida")
