@@ -5,6 +5,7 @@ Funcionalidade: Registrar uma nova conta no ParaBank
   quero registrar uma nova conta
   para começar usar os serviços do ParaBank
 
+  @Registar_NovaConta
 Cenário: Registrar nova conta no Parabank
 
 Dado que acesso o site ParaBank
