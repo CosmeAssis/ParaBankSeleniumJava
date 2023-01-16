@@ -1,14 +1,9 @@
 package pages;
 
-import com.github.javafaker.Faker;
-import dev.failsafe.Fallback;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import runner.RunTest;
 import support.Utils;
-
-import java.util.Locale;
 
 public class RegisterAccountPage extends Utils {
     WebDriver driver;

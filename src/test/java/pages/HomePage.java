@@ -1,11 +1,8 @@
 package pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import support.Utils;
-
-import java.time.Duration;
 
 public class HomePage extends Utils {
 

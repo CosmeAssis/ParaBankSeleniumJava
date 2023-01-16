@@ -2,8 +2,6 @@ package steps;
 
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Quando;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import pages.HomePage;
 import runner.RunTest;
 
