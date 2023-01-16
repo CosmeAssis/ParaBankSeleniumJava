@@ -13,6 +13,7 @@ public class RegisterAccountStep extends RunTest {
     RegisterAccountPage registerAccountPage = new RegisterAccountPage(driver);
     @E("preencho os dados de cadastro")
     public void preencherDadosCadastrais() {
+        registerAccountPage.preencheFirstName();
         registerAccountPage.gerarDadosFake();
     }
 
